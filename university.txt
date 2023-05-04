@@ -1,0 +1,12 @@
+SELECT * FROM teachers;
+SELECT head_of_department FROM departments;
+SELECT * FROM degrees WHERE level = 'magistrale';
+SELECT * FROM students WHERE name = 'Marco';
+SELECT * FROM courses WHERE cfu >= 12;
+SELECT * FROM courses WHERE cfu > 10 OR cfu < 5;
+SELECT * FROM courses WHERE period = 'I semestre' AND year = 1; 
+SELECT * FROM courses WHERE website IS NULL;
+SELECT * FROM teachers WHERE phone IS NOT NULL;
+SELECT * FROM students WHERE name LIKE 'E%';
+SELECT COUNT (name) FROM teachers WHERE name LIKE 'E%';
+SELECT COUNT (phone) FROM teachers WHERE phone IS NULL;
